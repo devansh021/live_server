@@ -10,7 +10,6 @@ const teams = {
       name: '~Shriyukt Gupta~',
       role: 'Team Lead | AI/ML Developer',
       image: 'public/images/team/shri.jpg',
-     
       linkedin: 'https://www.linkedin.com/in/shriyukt-gupta-12b665277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: 'https://www.instagram.com/shriyuktt?igsh=djNtZHl0cW9oMTNj',
     },
@@ -20,24 +19,20 @@ const teams = {
       name: '~Devansh Arya~',
       role: 'Full Stack Developer',
       image: 'public/images/team/devansh.jpg',
-      
-      
       linkedin: 'https://www.linkedin.com/in/devansh-arya-415378305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      instagram: 'https://www.instagram.com/devansh_arya021/profilecard/?igsh=MWkyMGZ5a3ZyYWFjaA== ',
+      instagram: 'https://www.instagram.com/devansh_arya021/profilecard/?igsh=MWkyMGZ5a3ZyYWFjaA==',
     },
     {
       name: '~Shubhanshi Negi~',
       role: 'AI/ML Developer',
       image: 'public/images/team/shubi.jpg',
-      
       linkedin: 'https://www.linkedin.com/in/shubhanshi-negi-0a4352338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: 'https://www.instagram.com/shubhanshi_negi16?igsh=YXc5c3Rja2FuOHp0',
     },
     {
       name: '~Ankit Bisht~',
-      role: 'object detection and hardware developer',
+      role: 'Object Detection & Hardware Developer',
       image: 'public/images/team/ankit.jpg',
-      
       linkedin: 'https://www.linkedin.com/in/ankit-bisht-8a0b372a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: 'https://www.instagram.com/divya.adhikari_87?igsh=OHR3czAyazE1d2p0',
     },
@@ -47,12 +42,11 @@ const teams = {
       name: '~Kritika Sharma~',
       role: 'Hardware Engineer',
       image: 'public/images/team/kritika.jpg',
-      
       linkedin: 'https://www.linkedin.com/in/kritika-sharma-geu',
       instagram: 'https://www.instagram.com/kritikabairagi_03/profilecard/?igsh=MWltbXc0djdpY3Y1YQ==',
     },
     {
-      name: '~divya Adhikari~',
+      name: '~Divya Adhikari~',
       role: 'AI/ML and Hardware Developer',
       image: 'public/images/team/divya.jpg',
       linkedin: 'https://www.linkedin.com/in/divya-adhikari-213269325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
@@ -61,7 +55,7 @@ const teams = {
   ],
 };
 
-// Social Icons Component
+// Social Icons
 const SocialIcons = ({ member }) => (
   <div className="flex gap-4 mt-4 justify-center text-white">
     {member.github && (
@@ -103,7 +97,7 @@ const SocialIcons = ({ member }) => (
   </div>
 );
 
-// Card component
+// Card
 const Card = ({ member, delay }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
@@ -130,7 +124,7 @@ const Card = ({ member, delay }) => (
   </motion.div>
 );
 
-// Leader card
+// Leader Card
 const LeaderCard = ({ member }) => (
   <motion.div
     initial={{ opacity: 0, scale: 0.7 }}
@@ -158,7 +152,7 @@ const LeaderCard = ({ member }) => (
   </motion.div>
 );
 
-// Team section component
+// Team Section
 const TeamSection = ({ title, icon, members, delayOffset = 0 }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
@@ -177,7 +171,7 @@ const TeamSection = ({ title, icon, members, delayOffset = 0 }) => (
   </motion.div>
 );
 
-// Main component
+// Final Component
 const OurTeamPage = () => {
   return (
     <motion.div
@@ -196,26 +190,20 @@ const OurTeamPage = () => {
           Meet Our Team 👨‍💻
         </h1>
         <p className="mt-4 text-gray-400 text-lg max-w-xl mx-auto font-serif">
-          Building the future of assistive tech with innovation and teamwork.
+          A team of passionate developers and engineers building innovative tech!
         </p>
       </motion.div>
 
-      <div className="flex justify-center mb-24">
+      {/* Leader */}
+      <div className="flex justify-center mb-28">
         <LeaderCard member={teams.leader[0]} />
       </div>
 
-      <TeamSection
-        title="Hardware Team"
-        icon={<FaTools />}
-        members={teams.hardware}
-        delayOffset={1}
-      />
-      <TeamSection
-        title="Software Team"
-        icon={<FaLaptopCode />}
-        members={teams.software}
-        delayOffset={1.5}
-      />
+      {/* Software Team */}
+      <TeamSection title="Software Team" icon={<FaLaptopCode />} members={teams.software} delayOffset={0.4} />
+
+      {/* Hardware Team */}
+      <TeamSection title="Hardware Team" icon={<FaTools />} members={teams.hardware} delayOffset={0.6} />
     </motion.div>
   );
 };
