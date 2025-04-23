@@ -9,7 +9,7 @@ const teams = {
     {
       name: '~Shriyukt Gupta~',
       role: 'Team Lead | AI/ML Developer',
-      image: 'public/team/shri.jpg',
+      image: 'public/images/team/shri.jpg',
      
       linkedin: 'https://www.linkedin.com/in/shriyukt-gupta-12b665277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: 'https://www.instagram.com/shriyuktt?igsh=djNtZHl0cW9oMTNj',
@@ -19,7 +19,7 @@ const teams = {
     {
       name: '~Devansh Arya~',
       role: 'Full Stack Developer',
-      image: 'public/team/devansh.jpg',
+      image: 'public/images/team/devansh.jpg',
       
       
       linkedin: 'https://www.linkedin.com/in/devansh-arya-415378305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
@@ -28,7 +28,7 @@ const teams = {
     {
       name: '~Shubhanshi Negi~',
       role: 'AI/ML Developer',
-      image: 'public/team/shubi.jpg',
+      image: 'public/images/team/shubi.jpg',
       
       linkedin: 'https://www.linkedin.com/in/shubhanshi-negi-0a4352338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: 'https://www.instagram.com/shubhanshi_negi16?igsh=YXc5c3Rja2FuOHp0',
@@ -36,7 +36,7 @@ const teams = {
     {
       name: '~Ankit Bisht~',
       role: 'object detection and hardware developer',
-      image: 'public/team/ankit.jpg',
+      image: 'public/images/team/ankit.jpg',
       
       linkedin: 'https://www.linkedin.com/in/ankit-bisht-8a0b372a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: 'https://www.instagram.com/divya.adhikari_87?igsh=OHR3czAyazE1d2p0',
@@ -46,7 +46,7 @@ const teams = {
     {
       name: '~Kritika Sharma~',
       role: 'Hardware Engineer',
-      image: 'public/team/kritika.jpg',
+      image: 'public/images/team/kritika.jpg',
       
       linkedin: 'https://www.linkedin.com/in/kritika-sharma-geu',
       instagram: 'https://www.instagram.com/kritikabairagi_03/profilecard/?igsh=MWltbXc0djdpY3Y1YQ==',
@@ -54,7 +54,7 @@ const teams = {
     {
       name: '~divya Adhikari~',
       role: 'AI/ML and Hardware Developer',
-      image: 'public/team/divya.jpg',
+      image: 'public/images/team/divya.jpg',
       linkedin: 'https://www.linkedin.com/in/divya-adhikari-213269325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: 'https://www.instagram.com/divya.adhikari_87?igsh=OHR3czAyazE1d2p0',
     },
