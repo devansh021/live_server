@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/* Futuristic glitch logo */
+.glitch {
+  position: relative;
+  color: white;
+  text-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  color: cyan;
+}
+.glitch::before {
+  top: -1px;
+  animation: glitchTop 1.5s infinite linear alternate-reverse;
+}
+.glitch::after {
+  bottom: -1px;
+  color: fuchsia;
+  animation: glitchBottom 1.8s infinite linear alternate-reverse;
+}
+
+@keyframes glitchTop {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  20% { clip: rect(0, 9999px, 6px, 0); }
+  40% { clip: rect(0, 9999px, 2px, 0); }
+  60% { clip: rect(0, 9999px, 8px, 0); }
+  80% { clip: rect(0, 9999px, 4px, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+@keyframes glitchBottom {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  25% { clip: rect(4px, 9999px, 10px, 0); }
+  50% { clip: rect(2px, 9999px, 8px, 0); }
+  75% { clip: rect(6px, 9999px, 12px, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
